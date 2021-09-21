@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <script>
+
+        const str = prompt('Enter a string: ');
+
+        function palindrome(str) {
+
+            var len = str.length;
+
+            for ( var i = 0; i < len/2; i++ ) {
+                if (str[i] !== str[len - 1 - i]) {
+                    alert("String is not Palindrome");
+                }
+            }
+            alert("String is Palindrome");
+        }
+        const a = palindrome(str);
+        console.log(a);
+
+    </script>
+</body>
+</html>
